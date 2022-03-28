@@ -1,0 +1,33 @@
+.appBar{
+    height: 50px;
+    background-color: aqua;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    /* justify-content: center; */
+    align-items: center;
+}
+.appBar .hamButton{
+    cursor: pointer;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+.appBar .hamButton div{
+    background-color: black;
+    width: 30px;
+    height: 3.5px;
+}
+.title{
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%);
+    top: 15px;
+
+    /* transform: translateY(-25px); */
+}
+
+
