@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./styles/browse.css">
+    <link rel="stylesheet" href="./styles/slideshow.css">
+    <link rel="stylesheet" href="./styles/navigator.css">
+    <link rel="stylesheet" href="./styles/advert.css">
+    <link rel="stylesheet" href="./styles/dropdown.css">
     <link rel="stylesheet" href="./styles/sidebar.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/appBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,28 +25,137 @@
             <div></div>
         </div>
     </div>
+
+    <!-- navigator  -->
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
+    </div><!-- nav last div -->
+    
+
+
     <main>
         <div id="mySidebar" class="sidebar">
             <a class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a>Categories</a>
+            <button class="dropdown-btn">Apple
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Apple Series Watch</a>
+                <a href="#">Apple Airpods</a>
+                    <button class="dropdown-btn">Apple Iphones
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                      <div class="dropdown-container">
+                        <a href="#">Iphone SE Series</a>
+                        <a href="#">Iphone 6 Series</a>
+                        <a href="#">Iphone 7 Series</a>
+                        <a href="#">Iphone 8 Series</a>
+                        <a href="#">Iphone X Series</a>
+                        <a href="#">Iphone 11 Series</a>
+                        <a href="#">Iphone 12 Series</a>
+                        <a href="#">Iphone 13 Series</a>
+                      </div>
+                </a>
+              </div>
+              <button class="dropdown-btn">Android 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Samsung</a>
+                <a href="#">Huawei</a>
+                <a href="#">Tecno</a>
+              </div>
+              <button class="dropdown-btn">Dropdown 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
             
           </div>
+          
+
+          <!-- slideshow advert  -->
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+            <img src='./images/advert1.png' alt=""/>
+                <div class="text"></div>
+              </div>
+            <div class="mySlides fade">
+            <img  src='./images/advert2png.jpg' alt=""/>
+                <div class="text"></div>
+              </div>
+            <div class="mySlides fade">
+            <img  src='./images/advert3.jpg' alt=""/>
+                <div class="text"></div>
+              </div>
+            <div class="mySlides fade">
+            <img  src='./images/advert4.jpg' alt=""/>
+                <div class="text"></div>
+              </div>
+            <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+              <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+              <div style='text-align: center;'>
+                <span class="dot" onclick='currentSlide(1)'></span>
+                <span class="dot" onclick='currentSlide(2)'></span>
+                <span class="dot" onclick='currentSlide(3)'></span>
+                <span class="dot" onclick='currentSlide(4)'></span>
+              </div>
+            </div>
+          <!-- end slideshow  -->
+
+          <div class="browse">
+            <div>Browse Devices</div>
+            <div class="browseSection">
+              <div class="items">
+                <div><img src="./images/iphones.png" alt=""></div>
+                <div>Iphones</div>
+                </div>
+              <div class="items">
+                <div><img src="./images/android.png" alt=""></div>
+                <div>Androids</div>
+                </div>
+              <div class="items">
+                <div><img src="./images/ipads.png" alt=""></div>
+                <div>Ipads</div>
+                </div>
+              <div class="items">
+                <div><img src="./images/macs.png" alt=""></div>
+                <div>Macbooks</div>
+                </div>
+              <div class="items">
+                <div><img src="./images/headphones.png" alt=""></div>
+                <div>Headphones</div>
+                </div>
+            </div>
+            </div>
     </main>
-    <script src="./script.js"></script>
+    <script src="./scripts/sidebar.js"></script>
+    <script src="./scripts/dropdown.js"></script>
+    <script src="./scripts/slideshow.js"></script>
 </body>
 </html>
