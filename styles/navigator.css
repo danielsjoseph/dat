@@ -4,12 +4,13 @@
     }
 }
 @media only screen and (min-width:768px){
+  /* desktop */
     .navbar {
         position: fixed;
         top: 50px;
         width: 100%;
         background-color: #333;
-        z-index: 1;
+        z-index: 2;
     }
 .navbar a {
   float: left;

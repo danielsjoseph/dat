@@ -26,18 +26,21 @@
     
 }
 .title{
-    position: fixed;
-    z-index: 5;
-    left: 50%;
-    transform: translate(-50%);
-    top: 15px;
+    font-size: 26px;
     color: blue;
-
-    /* transform: translateY(-25px); */
+    position: absolute;
+    left: 50%;
+    font-family: exo 2;
+    transform: translateX(-50%);
 }
+.title1{
+    font-size: 26px;
+    color: blue;
+}
+.bestDeals{
 
-
-@media only screen and (min-width:768px){
+}
+@media (min-width:768px){ /*destop*/
     .appBar .hamButton{
         display: none;
     }   

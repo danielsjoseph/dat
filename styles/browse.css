@@ -19,7 +19,10 @@
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    
+}
+
+.browseSection::-webkit-scrollbar{
+    display: none;
 }
 .items div:nth-child(1){
     height: 240px;

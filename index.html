@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+    <script src="./scripts/sidebar.js"></script>
+    <script src="./scripts/dropdown.js"></script>
+    <script src="./scripts/slideshow.js"></script>
+    <script src="./scripts/bestDeals.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/bestDeals.css">
     <link rel="stylesheet" href="./styles/browse.css">
     <link rel="stylesheet" href="./styles/slideshow.css">
     <link rel="stylesheet" href="./styles/navigator.css">
@@ -16,14 +26,13 @@
     <title>Datphones</title>
 </head>
 <body>
-    <div class="title">DATPHONES</div>
-    
     <div class="appBar">
         <div class="hamButton" onclick="openNav()">
             <div></div>
             <div></div>
             <div></div>
         </div>
+        <div class="title">DATPHONES</div>
     </div>
 
     <!-- navigator  -->
@@ -128,8 +137,8 @@
             </div>
           <!-- end slideshow  -->
 
+          <div class="title1">Browse Devices</div>
           <div class="browse">
-            <div>Browse Devices</div>
             <div class="browseSection">
               <div class="items">
                 <div><img src="./images/iphones.png" alt=""></div>
@@ -153,9 +162,63 @@
                 </div>
             </div>
             </div>
+
+            <!-- Some of our best deals  -->
+            <div class="title1">SOME OF OUR BEST DEALS</div>
+            <div id="bestDealsButton">
+              <div id="left" onclick="left()"><span class="iconify" data-icon="ooui:previous-ltr"></span></div>
+              <div id="right" onclick="right()"><span class="iconify" data-icon="ooui:previous-rtl"></span></div>
+            </div>
+            <div id="bestDeals">
+              <div id="bestDealsContent">
+                <div class="detailed" onmouseover="changeImage()" onmouseout="revertImage()"><div class="pictureArea">
+                  <div id="img1"><img src="./images/airpods pro.png" alt=""></div>
+                  <div id="img2"><img src="./images/airpods out.png" alt=""></div>
+                </div><hr><div class="textArea">&#8358;</div></div>
+                <div class="detailed" onmouseover="changeImage1()" onmouseout="revertImage1()"><div class="pictureArea">
+                  <div id="img3"><img src="./images/buds.png" alt=""></div>
+                  <div id="img4"><img src="./buds top.png" alt=""></div>
+                </div><hr><div class="textArea">&#8358;</div></div>
+                <div class="detailed"><div class="pictureArea">
+                  <div></div>
+                  <div></div>
+                </div><hr><div class="textArea"></div></div>
+                <div class="detailed"><div class="pictureArea">
+                  <div></div>
+                  <div></div>
+                </div><hr><div class="textArea"></div></div>
+                <div class="detailed"><div class="pictureArea">
+                  <div></div>
+                  <div></div>
+                </div><hr><div class="textArea"></div></div>
+                <div class="detailed"><div class="pictureArea">
+                  <div></div>
+                  <div></div>
+                </div><hr><div class="textArea"></div></div>
+                <div class="detailed"><div class="pictureArea">
+                  <div></div>
+                  <div></div>
+                </div><hr><div class="textArea"></div></div>
+                <div class="detailed"><div class="pictureArea">
+                  <div></div>
+                  <div></div>
+                </div><hr><div class="textArea"></div></div>
+                <div class="detailed"><div class="pictureArea">
+                  <div></div>
+                  <div></div>
+                </div><hr><div class="textArea"></div></div>
+                <div class="detailed"><div class="pictureArea">
+                  <div></div>
+                  <div></div>
+                </div><hr><div class="textArea"></div></div>
+              </div>
+            </div>
+
+            <!-- end of best deals  -->
     </main>
-    <script src="./scripts/sidebar.js"></script>
-    <script src="./scripts/dropdown.js"></script>
-    <script src="./scripts/slideshow.js"></script>
+    <script>
+    document.getElementById("img2").style.display = "none";
+    document.getElementById("img4").style.display = "none";
+    </script>
 </body>
 </html>

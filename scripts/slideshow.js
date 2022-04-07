@@ -34,7 +34,7 @@ function plusSlides(n){
   } else {
     myTimer = setInterval(function(){plusSlides(n + 1)}, 6000);
   }
-}
+} 
 
 //Controls the current slide and resets interval if needed
 function currentSlide(n){
