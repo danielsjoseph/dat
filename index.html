@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+    <script src="./scripts/phoneSection.js"></script>
     <script src="./scripts/sidebar.js"></script>
     <script src="./scripts/dropdown.js"></script>
     <script src="./scripts/slideshow.js"></script>
@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/phoneSection.css">
     <link rel="stylesheet" href="./styles/bestDeals.css">
     <link rel="stylesheet" href="./styles/browse.css">
     <link rel="stylesheet" href="./styles/slideshow.css">
@@ -19,6 +21,7 @@
     <link rel="stylesheet" href="./styles/sidebar.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/appBar.css">
+    <link rel="stylesheet" href="./styles/aboutUsFooter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,31 +35,56 @@
             <div></div>
             <div></div>
         </div>
-        <div class="title">DATPHONES</div>
+        <div class="title">DATPHONES.COM</div>
     </div>
 
     <!-- navigator  -->
     <div class="navbar">
       <a href="#home">Home</a>
-      <a href="#news">News</a>
       <div class="dropdown">
-        <button class="dropbtn">Dropdown 
+        <button class="dropbtn">Iphones&nbsp;
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Iphone 7 Series</a>
+          <a href="#">Iphone 8 Series</a>
+          <a href="#">Iphone X Series</a>
+          <a href="#">Iphone 11 Series</a>
+          <a href="#">Iphone 12 Series</a>
+          <a href="#">Iphone 13 Series</a>
         </div>
       </div> 
       <div class="dropdown">
-        <button class="dropbtn">Dropdown 
+        <button class="dropbtn">Androids&nbsp; 
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Samsung</a>
+          <a href="#">Tecno</a>
+          <a href="#">Huawei</a>
+          <a href="#">Nokia</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Macs&nbsp; 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Samsung</a>
+          <a href="#">Tecno</a>
+          <a href="#">Huawei</a>
+          <a href="#">Nokia</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Headphones&nbsp; 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Samsung</a>
+          <a href="#">Tecno</a>
+          <a href="#">Huawei</a>
+          <a href="#">Nokia</a>
         </div>
       </div> 
     </div><!-- nav last div -->
@@ -163,62 +191,373 @@
             </div>
             </div>
 
+            <div class="title1">WELCOME TO PLUG. YOUR TRUSTED CONNECTION TO RELIABLE, CERTIFIED PRE-OWNED DEVICES.</div>
+              <div class="writeUps">
+              We strongly believe the only difference between purchasing a new or Certified Pre-Owned device should be price. That’s why we rigorously hand test, clean, sanitize, and certify every device we sell, providing you with: our Certified Pre-Owned Assurance, you’ll have peace of mind knowing your purchase is backed by our unmatched one-year warranty and 30-day money back guarantee.</div>
+              
             <!-- Some of our best deals  -->
-            <div class="title1">SOME OF OUR BEST DEALS</div>
-            <div id="bestDealsButton">
-              <div id="left" onclick="left()"><span class="iconify" data-icon="ooui:previous-ltr"></span></div>
-              <div id="right" onclick="right()"><span class="iconify" data-icon="ooui:previous-rtl"></span></div>
+            <div class="title1">SOME OF OUR BEST DEALS
+              <div id="bestDealsButton">
+                <div id="left" onclick="left()"><span class="iconify" data-icon="ooui:previous-ltr"></span></div>
+                <div id="right" onclick="right()"><span class="iconify" data-icon="ooui:previous-rtl"></span></div>
+              </div>
             </div>
+            
             <div id="bestDeals">
               <div id="bestDealsContent">
                 <div class="detailed" onmouseover="changeImage()" onmouseout="revertImage()"><div class="pictureArea">
                   <div id="img1"><img src="./images/airpods pro.png" alt=""></div>
                   <div id="img2"><img src="./images/airpods out.png" alt=""></div>
-                </div><hr><div class="textArea">&#8358;</div></div>
+                </div><hr><div class="textArea">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
                 <div class="detailed" onmouseover="changeImage1()" onmouseout="revertImage1()"><div class="pictureArea">
                   <div id="img3"><img src="./images/buds.png" alt=""></div>
                   <div id="img4"><img src="./buds top.png" alt=""></div>
-                </div><hr><div class="textArea">&#8358;</div></div>
+                </div><hr><div class="textArea">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="detailed" onmouseover="changeImage2()" onmouseout="revertImage2()"><div class="pictureArea">
+                  <div id="img5"><img src="./images/macs.png" alt=""></div>
+                  <div id="img6"><img src="./images/mac2.png" alt=""></div>
+                </div><hr><div class="textArea">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
                 <div class="detailed"><div class="pictureArea">
                   <div></div>
                   <div></div>
-                </div><hr><div class="textArea"></div></div>
+                </div><hr><div class="textArea">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
                 <div class="detailed"><div class="pictureArea">
                   <div></div>
                   <div></div>
-                </div><hr><div class="textArea"></div></div>
+                </div><hr><div class="textArea">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
                 <div class="detailed"><div class="pictureArea">
                   <div></div>
                   <div></div>
-                </div><hr><div class="textArea"></div></div>
+                </div><hr><div class="textArea">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
                 <div class="detailed"><div class="pictureArea">
                   <div></div>
                   <div></div>
-                </div><hr><div class="textArea"></div></div>
+                </div><hr><div class="textArea">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
                 <div class="detailed"><div class="pictureArea">
                   <div></div>
                   <div></div>
-                </div><hr><div class="textArea"></div></div>
+                </div><hr><div class="textArea">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
                 <div class="detailed"><div class="pictureArea">
                   <div></div>
                   <div></div>
-                </div><hr><div class="textArea"></div></div>
+                </div><hr><div class="textArea">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
                 <div class="detailed"><div class="pictureArea">
                   <div></div>
                   <div></div>
-                </div><hr><div class="textArea"></div></div>
-                <div class="detailed"><div class="pictureArea">
-                  <div></div>
-                  <div></div>
-                </div><hr><div class="textArea"></div></div>
+                </div><hr><div class="textArea">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
               </div>
             </div>
 
             <!-- end of best deals  -->
+
+
+            <!-- phones section  -->
+            <div id="phonesDisplay1" style="background-color: #f08721;">
+              <div id="resText">PHONES
+                plug is your connection to the latest tech, including iPhones and Androids at incredible prices. Save money and shop confidently with our Certified Pre-Owned (CPO) Assurance, featuring plug’s unmatched one-year warranty and 30-day money back guarantee.
+                <br>
+                <button style="color: #f08721;">View All</button>
+              </div>
+              <div id="phoneScroll1">
+                <div id="scrllableSec">
+                <div class="itemPhones" onmouseover="changeImage3()" onmouseout="revertImage3()">
+                  <div class="picSec">
+                    <img src="./images/iphonex.png" alt="" id="img7">
+                    <img src="./images/xfront.png" alt="" id="img8">
+                </div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- end phone section  -->
+            <div class="body">
+              
+            </div>
+            <!-- macs section  -->
+            <div id="phonesDisplay1">
+              <div id="resText">MAC'S
+                plug is your connection to the latest tech, including MacBook's, Mac Mini's and more at incredible prices.
+                
+                <button>View All</button>
+              </div>
+              <div id="phoneScroll1">
+                <div id="scrllableSec">
+                <div class="itemPhones" onmouseover="changeImage3()" onmouseout="revertImage3()">
+                  <div class="picSec">
+                    <img src="./images/iphonex.png" alt="" id="img7">
+                    <img src="./images/xfront.png" alt="" id="img8">
+                </div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                </div>
+              </div>
+            </div>
+            <!-- end macs  -->
+            <div class="body">
+              
+            </div>
+
+            <!-- headphones section  -->
+            <div id="phonesDisplay1" style="background-color: #4abfa7;">
+              <div id="resText">HEADPHONES
+                plug is your connection to the latest tech, including Headphones such as Airpods, Beats and more at incredible prices.
+                
+                <button style="color: #4abfa7;">View All</button>
+              </div>
+              <div id="phoneScroll1">
+                <div id="scrllableSec">
+                <div class="itemPhones" onmouseover="changeImage3()" onmouseout="revertImage3()">
+                  <div class="picSec">
+                    <img src="./images/iphonex.png" alt="" id="img7">
+                    <img src="./images/xfront.png" alt="" id="img8">
+                </div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                <div class="itemPhones"><div class="picSec"></div><hr><div class="txtSec">
+                  <div id="price">&#8358;50,000</div>
+                  <div id="name">Name</div>
+                  <div id="grade">Grade A</div>
+                </div></div>
+                </div>
+              </div>
+            </div>
+            <!-- end headphones  -->
+
+
+    <!-- about us footers  -->
+        <div class="desktopFooter">
+          <div class="about"><div class="title1">ABOUT PLUG</div>
+            We are a consumer electronics provider that connects people to reliable, Certified Pre-Owned Devices. We make it affordable and easy for you to get the most out of your personal technology purchases. 
+            
+            plug is a Responsible Recycling (R2) certified, the most widely adopted global standard and certification program in the industry.</div>
+          <div class="quickLinks"><div class="title1">Quick Links</div>
+            <div class="linksF"><a href="#">Iphones</a></div>
+          
+            <div class="linksF"><a href="#">Headphones</a></div>
+            
+            <div class="linksF"><a href="#">Androids</a></div>
+          
+            <div class="linksF"><a href="#">Macs</a></div>
+          
+          </div>
+          <div class="he">hey</div>
+          <div class="follow"><div class="title1">Follow Us:</div>
+          <div class="followButtons">
+          <button><span class="iconify" data-icon="akar-icons:facebook-fill" data-width="40"></span></button>
+          <button><span class="iconify" data-icon="ant-design:twitter-circle-filled" data-width="40"></span></button>
+          <button><span class="iconify" data-icon="ant-design:instagram-filled" data-width="40"></span></button>
+          </div>
+        </div>
+        </div>
+        <div class="mobileFooter">
+          <div class="aboutAb">
+            <button onclick="dropMe()">About Us 
+              <div class="spinJustu">
+                <div></div>
+                <div></div>
+              </div>
+            </button>
+            <div id="aboutWr">We are a consumer electronics provider that connects people to reliable, Certified Pre-Owned Devices. We make it affordable and easy for you to get the most out of your personal technology purchases. 
+
+              plug is an A+ rated business by the BBB.</div>
+          </div>
+          <div class="aboutAb">
+            <button onclick="dropLinks()">Quick Links
+              <div class="spinJustu">
+                <div></div>
+                <div></div>
+              </div> 
+             </button>
+             <div id="linkses">
+               <div>Iphones</div>
+               <div>Macs</div>
+               <div>Androids</div>
+               <div>Headphones</div>
+             </div>
+            </div>
+        </div>
+    <!-- end about us  -->
     </main>
     <script>
+    document.getElementById("aboutWr").style.display = "none"
+    document.getElementById("linkses").style.display = "none"
     document.getElementById("img2").style.display = "none";
     document.getElementById("img4").style.display = "none";
+    document.getElementById("img6").style.display = "none";
+    document.getElementById("img8").style.display = "none";
+    document.getElementById("img10").style.display = "none";
+    
+    function dropMe(){
+      document.getElementById("aboutWr").style.display = "block"
+      document.getElementById("linkses").style.display = "none"
+    }
+    function dropLinks(){
+      document.getElementById("linkses").style.display = "block"
+      document.getElementById("aboutWr").style.display = "none"
+    }
     </script>
 </body>
 </html>

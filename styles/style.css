@@ -1,32 +1,42 @@
 *{
+    
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    font-size: 16px;
+    font-weight: 400;
     font-family: 'Exo 2', sans-serif;
-}
-
-@media only screen and (max-width:768px){ 
-    /*mobile*/
-body{
-    height: 500vh;
-    /* overflow-x: hidden; */
 }
 main{
     position: relative;
-    top: 80px;
+    top: 100px;
+}
+body{
+    overflow-x: hidden;
+}
+.title1{
+    font-size: 26px;
+    color: blue;
+    position: relative;
+    font-weight: 900;
+    /* padding-left: 20px; */
+}
+.writeUps{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+@media only screen and (max-width:768px){ 
+    /*mobile*/
+main{
+    position: relative;
+    top: 50px;
     /* display: flex; */
 }
+.title1{
+    padding: 0;
 }
-
-@media only screen and (min-width:768px){ 
-    /*desktop*/
-    body{
-        height: 500vh;
-        /* overflow-x: hidden; */
-    }
-    main{
-        position: relative;
-        top: 130px;
-        /* display: flex; */
-    }
+.writeUps{
+    padding: 0;
 }
+}
+    

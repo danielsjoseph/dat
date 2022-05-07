@@ -1,9 +1,10 @@
 let dragonScroll = document.getElementById("bestDeals");
+
 function left(){
-    bestDeals.scrollLeft -= 1300;
+    bestDeals.scrollLeft -= 500;
 }
 function right(){
-    bestDeals.scrollLeft +=1300;
+    bestDeals.scrollLeft +=500;
 }
 
 function changeImage(){
@@ -22,5 +23,12 @@ function changeImage1(){
 function revertImage1(){
     document.getElementById("img4").style.display="none";
     document.getElementById("img3").style.display="block";
-
+}
+function changeImage2(){
+    document.getElementById("img5").style.display="none";
+    document.getElementById("img6").style.display="block";
+}
+function revertImage2(){
+    document.getElementById("img6").style.display="none";
+    document.getElementById("img5").style.display="block";
 }

@@ -21,16 +21,7 @@
     padding: 8px;
     cursor: pointer;
 }
-#bestDealsContent:nth-child(1){
-    padding-left: 25px;
-}
-#bestDealsContent:last-child{
-    padding-right: 25px;
-}
 #right, #left{
-    /* position: absolute; */
-    /* top: 225px; */
-    /* transform: translateY(-50%); */
     height: 50px;
     width: 50px;
     display: flex;
@@ -54,7 +45,8 @@
     width: 100%;
     justify-content: space-between;
     position: absolute;
-    top: 1020px;
+    /* top: 1020px; */
+    top: 250px;
     z-index: 1;
 }
 .pictureArea{
@@ -64,4 +56,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width:768px){
+    #right, #left{
+        display: none;
+    }
 }

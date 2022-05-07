@@ -1,16 +1,14 @@
-@media only screen and (max-width:768px){
-    .navbar{
-        display: none;
-    }
-}
-@media only screen and (min-width:768px){
-  /* desktop */
+
     .navbar {
         position: fixed;
         top: 50px;
         width: 100%;
-        background-color: #333;
+        background-color: darkblue;
         z-index: 2;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-between;
     }
 .navbar a {
   float: left;
@@ -38,7 +36,8 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: skyblue;
+  color: black;
 }
 
 .dropdown-content {
@@ -66,4 +65,8 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+@media (max-width:768px){
+  .navbar{
+    display: none;
+  }   
 }

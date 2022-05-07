@@ -30,16 +30,11 @@
     color: blue;
     position: absolute;
     left: 50%;
-    font-family: exo 2;
+    font-family: "exo 2", sans-serif;
+    font-weight: 700;
     transform: translateX(-50%);
 }
-.title1{
-    font-size: 26px;
-    color: blue;
-}
-.bestDeals{
 
-}
 @media (min-width:768px){ /*destop*/
     .appBar .hamButton{
         display: none;

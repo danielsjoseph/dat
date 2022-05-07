@@ -1,0 +1,78 @@
+    /* DESKTOP  */
+    #phonesDisplay1{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        background-color: blue;
+        padding: 10px; 
+    }
+    #resText{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        height: 460px;
+        width: 460px;
+        color: white;
+        /* background-color: #fff; */
+        padding-right: 10px;
+    }
+    #resText button{
+        color: blue;
+        width: fit-content;
+        padding: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #phoneScroll1{
+        background-color: white;
+        width: 100%;
+        height: 460px;
+        overflow-y: hidden;
+        
+        /* display: flex; */
+    }
+    #phoneScroll1::-webkit-scrollbar{
+        display: none;
+    }
+    #scrllableSec{
+        display: flex;
+        width: 2340px;
+        gap:2px;
+    }
+    .itemPhones{
+        width: 260px;
+        height: 460px;
+        /* background-color: aqua; */
+        padding: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.492);
+        
+    }
+    .picSec{
+        height: 260px;
+        position: relative;
+    }
+    .picSec img{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .txtSec{
+        height: 100%;
+    }
+    
+@media (max-width:768px){
+    /* MOBILE  */
+    #phonesDisplay1{
+        flex-direction: column; 
+    }
+    #phoneScroll1{
+        
+    }
+    #resText{
+        height: fit-content;
+        width: 100%;
+    }
+
+}

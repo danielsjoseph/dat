@@ -1,0 +1,101 @@
+.desktopFooter{
+    background-color: #e0eeea;
+    position: relative;
+    top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2);
+    gap: 10px;
+    padding: 10px;
+    line-height: 35px;
+}
+.linksF a{
+    text-decoration: none;
+    color: black;
+}
+.linksF a:hover{
+    color: orange;
+}
+.about{
+    min-width: 300px;
+}
+.followButtons{
+    gap: 10px;
+    display: flex;
+}
+.follow button{
+    background-color: transparent;
+    height: 40px;
+    /* display: none; */
+    overflow: hidden;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+
+    color: grey;
+    cursor: pointer;
+}
+.follow button:nth-child(1):hover{
+    color: #3B5998;
+}
+.follow button:nth-child(2):hover{
+    color: #1DA1F2;
+}
+.follow button:nth-child(3):hover{
+    color: #D83776;
+}
+@media (max-width:768px){
+    .desktopFooter{
+        display: none;
+    }
+    .mobileFooter{
+        background-color: #E0EEEA;
+    }
+    .aboutAb button{
+        background-color: #E0EEEA;
+        border: none;
+        cursor: pointer;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+        padding-left: 15px;
+        color: blue;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    #linkses{
+        padding-left: 15px;
+    }
+    #linkses div{
+        padding: 8px;
+    }
+    #linkses div:hover{
+        color: orange;
+        cursor: pointer;
+    }
+    #aboutWr{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .spinJustu{
+       height: 50px;
+       width: 50px;
+       position: relative;
+       animation-name: spinJustu;
+    }
+    .spinJustu div{
+       width: 2px;
+       height: 15px;
+       background-color:blue;
+       position: absolute;
+       left: 24px;
+       top: 17.5px;
+    }
+    .spinJustu div:nth-child(2){
+        transform: rotate(90deg);
+    }
+}
