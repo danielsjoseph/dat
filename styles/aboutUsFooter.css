@@ -9,6 +9,18 @@
     padding: 10px;
     line-height: 35px;
 }
+.mobileFooter{
+    display: none;
+}
+.follow{ 
+    padding-left: 15px;
+    padding-bottom: 15px;
+    color: blue;
+}
+.follow div:nth-child(1){
+    padding-bottom: 10px;
+    font-size: 18px;
+}
 .linksF a{
     text-decoration: none;
     color: black;
@@ -31,7 +43,6 @@
     width: 40px;
     border-radius: 50%;
     border: none;
-
     color: grey;
     cursor: pointer;
 }
@@ -49,6 +60,7 @@
         display: none;
     }
     .mobileFooter{
+        display: block;
         background-color: #E0EEEA;
     }
     .aboutAb button{
