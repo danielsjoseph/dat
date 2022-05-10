@@ -25,6 +25,9 @@ body{
     padding-left: 24px;
     padding-right: 24px;
 }
+a{
+    text-decoration: none;
+}
 @media only screen and (max-width:768px){ 
     /*mobile*/
 main{
