@@ -9,6 +9,9 @@
     padding: 10px;
     line-height: 35px;
 }
+.about{
+    max-width: 90%;
+}
 .mobileFooter{
     display: none;
 }
@@ -45,13 +48,13 @@
     color: grey;
     cursor: pointer;
 }
-.follow button:nth-child(1):hover{
+.follow a:nth-child(1):hover button{
     color: #3B5998;
 }
-.follow button:nth-child(2):hover{
+/* .follow a:nth-child(3):hover button{
     color: #1DA1F2;
-}
-.follow button:nth-child(3):hover{
+} */
+.follow a:nth-child(2):hover button{
     color: #D83776;
 }
 @media (max-width:768px){
