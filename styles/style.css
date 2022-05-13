@@ -15,7 +15,7 @@ main{
 body{
     overflow-x: hidden;
 }
-.title1{
+.title1, #title1{
     font-size: 26px;
     color: blue;
     position: relative;

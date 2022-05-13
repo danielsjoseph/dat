@@ -8,7 +8,11 @@
     width: 2600px;
     height: 450px;
     display: flex;
-    transition: .35s;
+}
+#bestDealsContent img{
+    max-height: 220px;
+    max-width: 240px;
+    display: flex;
 }
 #bestDeals::-webkit-scrollbar{
     display: none;
